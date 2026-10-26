@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingade Scalper Bot — Automated Forex Scalping</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <a href="index.html" class="nav-logo"><span>Kingade</span> Scalper Bot</a>
+    <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="mentorship.html">Free Mentorship</a>
+        <a href="download.html">Download</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="affiliate.html">Affiliate</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+    </div>
+    <button class="hamburger" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <canvas id="chartCanvas"></canvas>
+    <h1>KINGADE<br><span>BOT</span></h1>
+    <p class="subtitle">Automated forex scalping with proven results. Trade XAUUSD, GBPUSD & AUDUSD 24/7 with precision entries and smart risk management.</p>
+    <div class="hero-btns">
+        <a href="mentorship.html" class="btn btn-orange">FREE 2-WEEK MENTORSHIP</a>
+        <a href="download.html" class="btn btn-primary">Download Bot</a>
+        <a href="register.html" class="btn btn-outline">Register with Exness</a>
+        <a href="pricing.html" class="btn btn-outline">View Pricing</a>
+    </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+    <div class="stat"><div class="stat-num">3,421+</div><div class="stat-label">Live Trades</div></div>
+    <div class="stat"><div class="stat-num">62%+</div><div class="stat-label">Win Rate</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">Instruments</div></div>
+    <div class="stat"><div class="stat-num">24/7</div><div class="stat-label">Automated</div></div>
+    <div class="stat"><div class="stat-num">$999</div><div class="stat-label">Lifetime Access</div></div>
+</section>
+
+<!-- FEATURES -->
+<section class="section">
+    <div class="section-title">Why <span>Kingade Scalper Bot</span>?</div>
+    <div class="section-sub">Built by traders, for traders. Every feature is designed to maximize profits while minimizing risk.</div>
+    <div class="card-grid">
+        <div class="card">
+            <div class="icon">&#128200;</div>
+            <h3>Proven Performance</h3>
+            <p>4 months backtested with 6,199+ trades. 3,421+ live trades executed with verified results.</p>
+        </div>
+        <div class="card">
+            <div class="icon">&#9889;</div>
+            <h3>Multi-Timeframe</h3>
+            <p>Gold on M1 for fast scalps. GBPUSD & AUDUSD on M15 for steady intraday moves.</p>
+        </div>
+        <div class="card">
+            <div class="icon">&#128272;</div>
+            <h3>License Protected</h3>
+            <p>Each bot comes with a unique license key tied to your MT5 account. Secure and private.</p>
+        </div>
+        <div class="card">
+            <div class="icon">&#128737;</div>
+            <h3>Smart Risk Management</h3>
+            <p>ATR-based SL/TP, trailing stops, 4% risk per trade, and automatic Friday close.</p>
+        </div>
+        <div class="card">
+            <div class="icon">&#128176;</div>
+            <h3>Low Starting Capital</h3>
+            <p>Start with as little as $100. The bot manages lot sizes based on your account balance.</p>
+        </div>
+        <div class="card">
+            <div class="icon">&#128227;</div>
+            <h3>Telegram Signals</h3>
+            <p>Free access to Kingade Forex signal group. Get real-time trade alerts and market updates.</p>
+        </div>
+    </div>
+</section>
+
+<!-- BACKTEST RESULTS -->
+<section class="section section-dark">
+    <div class="section-title">Backtested <span>Results</span></div>
+    <div class="section-sub">Combined portfolio performance over 4 months on XAUUSD, GBPUSD & AUDUSD.</div>
+    <div class="results-box">
+        <div class="results-grid">
+            <div class="result-item">
+                <h4>Starting Capital</h4>
+                <div class="val blue">$1,000</div>
+                <div class="sub">Split across 3 symbols</div>
+            </div>
+            <div class="result-item">
+                <h4>Final Balance</h4>
+                <div class="val">$16,990</div>
+                <div class="sub">+1,599% return</div>
+            </div>
+            <div class="result-item">
+                <h4>Total Trades</h4>
+                <div class="val orange">6,199</div>
+                <div class="sub">Over 4 months</div>
+            </div>
+            <div class="result-item">
+                <h4>Average Win Rate</h4>
+                <div class="val">62.3%</div>
+                <div class="sub">Across all instruments</div>
+            </div>
+            <div class="result-item">
+                <h4>Profit Factor</h4>
+                <div class="val blue">1.69</div>
+                <div class="sub">Consistent profitability</div>
+            </div>
+            <div class="result-item">
+                <h4>Max Drawdown</h4>
+                <div class="val orange">13.8%</div>
+                <div class="sub">Controlled risk</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+    <div class="section-title">What Traders <span>Say</span></div>
+    <div class="section-sub">Join hundreds of satisfied traders using the Kingade Scalper Bot.</div>
+    <div class="testimonials-wrapper">
+        <div class="testimonials-track">
+            <div class="testimonial">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p>"This bot changed my trading completely. I was struggling with manual trading for years. Now the bot runs 24/7 and I wake up to profits every morning."</p>
+                <div class="author">Tendai M. — South Africa</div>
+            </div>
+            <div class="testimonial">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p>"Best scalping bot I've used. The XAUUSD signals are incredibly accurate. The trailing stop feature locks in profits beautifully."</p>
+                <div class="author">James K. — United Kingdom</div>
+            </div>
+            <div class="testimonial">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p>"Lifetime license was worth every cent. Already made it back in 2 weeks. The support team is also very responsive on Telegram."</p>
+                <div class="author">Ahmed R. — UAE</div>
+            </div>
+            <div class="testimonial">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p>"I've been using the bot for 3 months now. The risk management is excellent — it protects my capital while still delivering consistent gains."</p>
+                <div class="author">Michael B. — Nigeria</div>
+            </div>
+            <div class="testimonial">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p>"The Fibonacci entries on GBPUSD are on point. I was skeptical at first but the backtest results speak for themselves. Highly recommend!"</p>
+                <div class="author">Sarah L. — Kenya</div>
+            </div>
+            <div class="testimonial">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p>"Set it and forget it. I run this on a VPS and check my phone once a day. The Telegram notifications keep me updated without being overwhelming."</p>
+                <div class="author">David O. — Ghana</div>
+            </div>
+            <div class="testimonial">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p>"Customer support is top notch. Had an issue with setup and they walked me through it on Telegram within minutes. 10/10 service."</p>
+                <div class="author">Priya S. — India</div>
+            </div>
+            <div class="testimonial">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p>"Started with $500 and the bot has grown my account by 40% in just 6 weeks. The auto-pause on Fridays is a smart feature."</p>
+                <div class="author">Carlos M. — Brazil</div>
+            </div>
+            <!-- Duplicate for seamless loop -->
+            <div class="testimonial">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p>"This bot changed my trading completely. I was struggling with manual trading for years. Now the bot runs 24/7 and I wake up to profits every morning."</p>
+                <div class="author">Tendai M. — South Africa</div>
+            </div>
+            <div class="testimonial">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p>"Best scalping bot I've used. The XAUUSD signals are incredibly accurate. The trailing stop feature locks in profits beautifully."</p>
+                <div class="author">James K. — United Kingdom</div>
+            </div>
+            <div class="testimonial">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p>"Lifetime license was worth every cent. Already made it back in 2 weeks. The support team is also very responsive on Telegram."</p>
+                <div class="author">Ahmed R. — UAE</div>
+            </div>
+            <div class="testimonial">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p>"I've been using the bot for 3 months now. The risk management is excellent — it protects my capital while still delivering consistent gains."</p>
+                <div class="author">Michael B. — Nigeria</div>
+            </div>
+            <div class="testimonial">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p>"The Fibonacci entries on GBPUSD are on point. I was skeptical at first but the backtest results speak for themselves. Highly recommend!"</p>
+                <div class="author">Sarah L. — Kenya</div>
+            </div>
+            <div class="testimonial">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p>"Set it and forget it. I run this on a VPS and check my phone once a day. The Telegram notifications keep me updated without being overwhelming."</p>
+                <div class="author">David O. — Ghana</div>
+            </div>
+            <div class="testimonial">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p>"Customer support is top notch. Had an issue with setup and they walked me through it on Telegram within minutes. 10/10 service."</p>
+                <div class="author">Priya S. — India</div>
+            </div>
+            <div class="testimonial">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p>"Started with $500 and the bot has grown my account by 40% in just 6 weeks. The auto-pause on Fridays is a smart feature."</p>
+                <div class="author">Carlos M. — Brazil</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+    <h2>Ready to Start Trading?</h2>
+    <p>Join hundreds of traders using Kingade Scalper Bot to grow their accounts automatically.</p>
+    <div style="display:flex;gap:15px;justify-content:center;flex-wrap:wrap;">
+        <a href="pricing.html" class="btn btn-primary">View Pricing</a>
+        <a href="download.html" class="btn btn-outline">Download Bot</a>
+    </div>
+</section>
+
+<!-- CHAT WIDGET -->
+<div class="chat-widget">
+    <div class="chat-popup" id="chatPopup">
+        <div class="chat-header">
+            <div class="chat-header-avatar">KSB</div>
+            <div class="chat-header-info">
+                <h4>Kingade Scalper Bot</h4>
+                <p>We typically reply in minutes</p>
+            </div>
+        </div>
+        <div class="chat-body">
+            <div class="chat-msg">Hello! How can we help you today?</div>
+        </div>
+        <div class="chat-options">
+            <a href="https://t.me/KingAdeFx" class="chat-option" target="_blank">
+                <span>&#128172;</span> Chat on Telegram
+            </a>
+            <a href="mailto:kingade.fx@gmail.com" class="chat-option">
+                <span>&#128231;</span> Send us an Email
+            </a>
+            <a href="pricing.html" class="chat-option" onclick="closeChat()">
+                <span>&#128176;</span> View Pricing
+            </a>
+        </div>
+    </div>
+    <button class="chat-btn" onclick="toggleChat()">&#128172;</button>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="download.html">Download</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="affiliate.html">Affiliate</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About</a>
+    </div>
+    <div class="footer-social">
+        <a href="https://t.me/KingAdeFx" target="_blank">Telegram</a>
+        <a href="mailto:kingade.fx@gmail.com">Email</a>
+    </div>
+    <div class="footer-copy">&copy; 2026 Kingade Scalper Bot. All rights reserved. This software is licensed intellectual property.</div>
+</footer>
+
+</body>
+<script src="js/main.js"></script>
+<script>
+// 3D Animated Chart Background (Home page only)
+var canvas = document.getElementById('chartCanvas');
+if (canvas) {
+    var ctx = canvas.getContext('2d');
+    var width, height, time = 0;
+
+    function resize() {
+        width = canvas.width = canvas.offsetWidth;
+        height = canvas.height = canvas.offsetHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    var candles = [];
+    var numCandles = 60;
+    var price = 2650;
+    for (var i = 0; i < numCandles; i++) {
+        var change = (Math.random() - 0.48) * 30;
+        var open = price;
+        var close = price + change;
+        var high = Math.max(open, close) + Math.random() * 15;
+        var low = Math.min(open, close) - Math.random() * 15;
+        candles.push({ open: open, close: close, high: high, low: low });
+        price = close;
+    }
+
+    var zones = [
+        { y: 2620, type: 'buy', label: 'BUY ZONE' },
+        { y: 2700, type: 'sell', label: 'SELL ZONE' },
+        { y: 2660, type: 'entry', label: 'ENTRY' }
+    ];
+
+    function draw3DChart() {
+        ctx.clearRect(0, 0, width, height);
+        var perspective = 0.6;
+        var scaleY = height / 400;
+        var candleWidth = (width * 0.8) / numCandles;
+        var offsetX = width * 0.1;
+
+        ctx.strokeStyle = 'rgba(82,183,136,0.08)';
+        ctx.lineWidth = 1;
+        for (var i = 0; i < 10; i++) {
+            var y = height * 0.1 + (height * 0.8 / 10) * i;
+            ctx.beginPath(); ctx.moveTo(0, y);
+            for (var x = 0; x < width; x += 5) {
+                ctx.lineTo(x, y + Math.sin((x * 0.005) + time * 0.5 + i * 0.3) * 3 * perspective);
+            }
+            ctx.stroke();
+        }
+        for (var i = 0; i < 15; i++) {
+            var x = (width / 15) * i;
+            ctx.beginPath(); ctx.moveTo(x, 0);
+            for (var y = 0; y < height; y += 5) {
+                ctx.lineTo(x + Math.sin((y * 0.008) + time * 0.3 + i * 0.2) * 2 * perspective, y);
+            }
+            ctx.stroke();
+        }
+
+        zones.forEach(function(zone, idx) {
+            var baseY = height * 0.5 + (zone.y - 2660) * scaleY;
+            var pulse = Math.sin(time * 2 + idx) * 10;
+            var zoneHeight = 40 + pulse;
+            var gradient = ctx.createLinearGradient(0, baseY - zoneHeight, 0, baseY + zoneHeight);
+            var c = zone.type === 'buy' ? '82,183,136' : zone.type === 'sell' ? '255,107,107' : '252,196,25';
+            gradient.addColorStop(0, 'rgba(' + c + ',0)');
+            gradient.addColorStop(0.5, 'rgba(' + c + ',0.15)');
+            gradient.addColorStop(1, 'rgba(' + c + ',0)');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, baseY - zoneHeight, width, zoneHeight * 2);
+            ctx.strokeStyle = 'rgba(' + c + ',0.4)';
+            ctx.lineWidth = 1; ctx.setLineDash([8, 4]);
+            ctx.beginPath(); ctx.moveTo(0, baseY);
+            for (var x = 0; x < width; x += 3) {
+                ctx.lineTo(x, baseY + Math.sin((x * 0.01) + time + idx) * 2 * perspective);
+            }
+            ctx.stroke(); ctx.setLineDash([]);
+            ctx.fillStyle = 'rgba(' + c + ',0.6)';
+            ctx.font = 'bold 11px Inter';
+            ctx.fillText(zone.label, 20, baseY - zoneHeight + 15);
+        });
+
+        candles.forEach(function(candle, i) {
+            var x = offsetX + i * candleWidth;
+            var scrollOffset = (time * 30) % (candleWidth * numCandles);
+            var drawX = x - scrollOffset;
+            if (drawX < -candleWidth) drawX += candleWidth * numCandles;
+            if (drawX > width + candleWidth) return;
+            var wave = Math.sin((drawX * 0.008) + time * 0.5) * 8 * perspective;
+            var baseY = height * 0.5;
+            var openY = baseY + (candle.open - 2710) * scaleY + wave;
+            var closeY = baseY + (candle.close - 2710) * scaleY + wave;
+            var highY = baseY + (candle.high - 2710) * scaleY + wave;
+            var lowY = baseY + (candle.low - 2710) * scaleY + wave;
+            var bullish = candle.close > candle.open;
+            var color = bullish ? 'rgba(82,183,136,0.8)' : 'rgba(255,107,107,0.8)';
+            ctx.fillStyle = bullish ? 'rgba(82,183,136,0.1)' : 'rgba(255,107,107,0.1)';
+            ctx.fillRect(drawX + 3, Math.min(openY, closeY) + 3, candleWidth - 4, Math.abs(closeY - openY) || 2);
+            ctx.strokeStyle = color; ctx.lineWidth = 1.5;
+            ctx.beginPath(); ctx.moveTo(drawX + candleWidth / 2, highY); ctx.lineTo(drawX + candleWidth / 2, lowY); ctx.stroke();
+            ctx.fillStyle = color;
+            var bodyTop = Math.min(openY, closeY);
+            var bodyHeight = Math.max(Math.abs(closeY - openY), 2);
+            ctx.fillRect(drawX + 2, bodyTop, candleWidth - 4, bodyHeight);
+            ctx.shadowColor = bullish ? '#52b788' : '#ff6b6b'; ctx.shadowBlur = 10;
+            ctx.fillRect(drawX + 2, bodyTop, candleWidth - 4, bodyHeight); ctx.shadowBlur = 0;
+        });
+
+        var currentPrice = (2710 + Math.sin(time * 0.5) * 40 + time * 2).toFixed(2);
+        var priceTagY = height * 0.5 + Math.sin(time * 0.5) * 40 * scaleY;
+        ctx.fillStyle = '#52b788'; ctx.fillRect(width - 90, priceTagY - 12, 80, 24);
+        ctx.fillStyle = '#000'; ctx.font = 'bold 12px Inter';
+        ctx.fillText('$' + currentPrice, width - 82, priceTagY + 4);
+
+        time += 0.016;
+        requestAnimationFrame(draw3DChart);
+    }
+    draw3DChart();
+}
+</script>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Kingade Scalper Bot</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="nav-logo"><span>Kingade</span> Scalper Bot</a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="download.html">Download</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="affiliate.html">Affiliate</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active nav-cta">Contact</a>
+    </div>
+    <button class="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></button>
+</nav>
+
+<section class="page-hero">
+    <h1>Ready to <span>Start</span>?</h1>
+    <p>Contact us to purchase your license key and get started today.</p>
+</section>
+
+<section class="section">
+    <div class="contact-grid">
+        <a href="https://t.me/KingAdeFx" class="contact-card" target="_blank">
+            <div class="icon">&#128172;</div>
+            <h3>Telegram</h3>
+            <p>Chat with us directly on Telegram for instant support.</p>
+            <span class="btn btn-primary btn-sm">@KingAdeFx</span>
+        </a>
+        <a href="mailto:kingade.fx@gmail.com" class="contact-card">
+            <div class="icon">&#128231;</div>
+            <h3>Email</h3>
+            <p>Send us an email and we'll respond within 24 hours.</p>
+            <span class="btn btn-outline btn-sm">kingade.fx@gmail.com</span>
+        </a>
+    </div>
+
+    <div class="text-center mt-40 mb-40">
+        <h2 style="font-size:1.5rem;margin-bottom:10px;">Or Send Us a Message</h2>
+        <p style="color:#888;">Fill out the form below and we'll get back to you.</p>
+    </div>
+
+    <form id="contactForm" onsubmit="submitContact(event)" style="max-width:600px;margin:0 auto;">
+        <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" name="name" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+            <label>Subject</label>
+            <select name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="Purchase">Purchase License</option>
+                <option value="Support">Technical Support</option>
+                <option value="Affiliate">Affiliate Program</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" placeholder="Tell us how we can help..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+    </form>
+</section>
+
+<div class="chat-widget">
+    <div class="chat-popup" id="chatPopup">
+        <div class="chat-header"><div class="chat-header-avatar">KSB</div><div class="chat-header-info"><h4>Kingade Scalper Bot</h4><p>We typically reply in minutes</p></div></div>
+        <div class="chat-body"><div class="chat-msg">Hello! How can we help you today?</div></div>
+        <div class="chat-options">
+            <a href="https://t.me/KingAdeFx" class="chat-option" target="_blank"><span>&#128172;</span> Chat on Telegram</a>
+            <a href="mailto:kingade.fx@gmail.com" class="chat-option"><span>&#128231;</span> Send us an Email</a>
+            <a href="pricing.html" class="chat-option" onclick="closeChat()"><span>&#128176;</span> View Pricing</a>
+        </div>
+    </div>
+    <button class="chat-btn" onclick="toggleChat()">&#128172;</button>
+</div>
+
+<footer>
+    <div class="footer-links"><a href="index.html">Home</a><a href="download.html">Download</a><a href="pricing.html">Pricing</a><a href="affiliate.html">Affiliate</a><a href="contact.html">Contact</a><a href="faq.html">FAQ</a><a href="about.html">About</a></div>
+    <div class="footer-social"><a href="https://t.me/KingAdeFx" target="_blank">Telegram</a><a href="mailto:kingade.fx@gmail.com">Email</a></div>
+    <div class="footer-copy">&copy; 2026 Kingade Scalper Bot. All rights reserved.</div>
+</footer>
+
+</body>
+<script src="js/main.js"></script>
+</html>

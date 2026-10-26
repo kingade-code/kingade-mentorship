@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ — Kingade Scalper Bot</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="nav-logo"><span>Kingade</span> Scalper Bot</a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="download.html">Download</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="affiliate.html">Affiliate</a>
+        <a href="faq.html" class="active">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+    </div>
+    <button class="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></button>
+</nav>
+
+<section class="page-hero">
+    <h1>Frequently Asked <span>Questions</span></h1>
+    <p>Everything you need to know before purchasing.</p>
+</section>
+
+<section class="section">
+    <div class="faq">
+        <div class="faq-item">
+            <h3>What brokers work with the bot?</h3>
+            <p>Any broker that supports MetaTrader 5. We use Exness, but IC Markets, XM, Pepperstone, and others work perfectly.</p>
+        </div>
+        <div class="faq-item">
+            <h3>What's the minimum deposit?</h3>
+            <p>We recommend $500 for optimal risk management, but you can start with as little as $100. The bot adjusts lot sizes based on your balance.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How do I install the bot?</h3>
+            <p>After purchase, you'll receive a download link. Extract the files, copy them to your MT5 folder, run the bot, and enter your license key. Setup takes about 5 minutes.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Do I need to be online 24/7?</h3>
+            <p>Yes, MT5 must be running for the bot to trade. We recommend using a VPS (Virtual Private Server) for uninterrupted trading. We can help you set this up.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How does the license key work?</h3>
+            <p>Each license key is tied to one MT5 account. After purchase, you enter your key once and it's saved automatically. Monthly keys expire after 30 days, annual after 365 days, and lifetime keys never expire.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Can I use the bot on multiple accounts?</h3>
+            <p>Each license key works on one MT5 account. If you need multiple accounts, contact us for a discount on bulk purchases.</p>
+        </div>
+        <div class="faq-item">
+            <h3>What instruments does the bot trade?</h3>
+            <p>The bot trades XAUUSD (Gold) on M1 timeframe and GBPUSD & AUDUSD on M15 timeframe. These are the most liquid and profitable instruments for scalping.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How do I get support?</h3>
+            <p>You can reach us via Telegram (@KingAdeFx) or email (kingade.fx@gmail.com). We typically respond within minutes on Telegram and within 24 hours on email.</p>
+        </div>
+        <div class="faq-item">
+            <h3>What's your refund policy?</h3>
+            <p>We offer a 30-day money-back guarantee. If you're not satisfied with the bot within the first 30 days, contact us for a full refund.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How does the affiliate program work?</h3>
+            <p>Sign up as an affiliate, get your unique coupon code, share it with friends and followers. You earn 20% commission on every sale made using your code. <a href="affiliate.html" style="color:#52b788;">Learn more &rarr;</a></p>
+        </div>
+    </div>
+
+    <div class="text-center mt-40">
+        <p style="color:#888;">Still have questions?</p>
+        <a href="contact.html" class="btn btn-outline mt-20">Contact Us</a>
+    </div>
+</section>
+
+<div class="chat-widget">
+    <div class="chat-popup" id="chatPopup">
+        <div class="chat-header"><div class="chat-header-avatar">KSB</div><div class="chat-header-info"><h4>Kingade Scalper Bot</h4><p>We typically reply in minutes</p></div></div>
+        <div class="chat-body"><div class="chat-msg">Hello! How can we help you today?</div></div>
+        <div class="chat-options">
+            <a href="https://t.me/KingAdeFx" class="chat-option" target="_blank"><span>&#128172;</span> Chat on Telegram</a>
+            <a href="mailto:kingade.fx@gmail.com" class="chat-option"><span>&#128231;</span> Send us an Email</a>
+            <a href="pricing.html" class="chat-option" onclick="closeChat()"><span>&#128176;</span> View Pricing</a>
+        </div>
+    </div>
+    <button class="chat-btn" onclick="toggleChat()">&#128172;</button>
+</div>
+
+<footer>
+    <div class="footer-links"><a href="index.html">Home</a><a href="download.html">Download</a><a href="pricing.html">Pricing</a><a href="affiliate.html">Affiliate</a><a href="contact.html">Contact</a><a href="faq.html">FAQ</a><a href="about.html">About</a></div>
+    <div class="footer-social"><a href="https://t.me/KingAdeFx" target="_blank">Telegram</a><a href="mailto:kingade.fx@gmail.com">Email</a></div>
+    <div class="footer-copy">&copy; 2026 Kingade Scalper Bot. All rights reserved.</div>
+</footer>
+
+</body>
+<script src="js/main.js"></script>
+</html>

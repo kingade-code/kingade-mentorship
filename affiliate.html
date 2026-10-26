@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affiliate Program — Kingade Scalper Bot</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="nav-logo"><span>Kingade</span> Scalper Bot</a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="download.html">Download</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="affiliate.html" class="active">Affiliate</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+    </div>
+    <button class="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></button>
+</nav>
+
+<section class="page-hero">
+    <h1>Earn 20% <span>Commission</span></h1>
+    <p>Refer traders to Kingade Scalper Bot and earn money for every sale.</p>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section">
+    <div class="section-title">How It <span>Works</span></div>
+    <div class="affiliate-grid">
+        <div class="affiliate-card">
+            <div class="icon">&#128221;</div>
+            <h3>1. Sign Up</h3>
+            <p>Fill out the form below. Get your unique coupon code within 24 hours.</p>
+        </div>
+        <div class="affiliate-card">
+            <div class="icon">&#128279;</div>
+            <h3>2. Share Your Link</h3>
+            <p>Share your code with friends, followers, or on social media.</p>
+        </div>
+        <div class="affiliate-card">
+            <div class="icon">&#128176;</div>
+            <h3>3. Earn 20%</h3>
+            <p>Earn 20% commission on every sale made using your code.</p>
+        </div>
+        <div class="affiliate-card">
+            <div class="icon">&#128179;</div>
+            <h3>4. Get Paid</h3>
+            <p>Request payout anytime via PayPal or crypto. Minimum $50.</p>
+        </div>
+    </div>
+
+    <div class="affiliate-earnings">
+        <div class="earnings-grid">
+            <div class="earnings-item">
+                <h4>Per Monthly Sale</h4>
+                <div class="val">$19.80</div>
+                <div class="sub">20% of $99</div>
+            </div>
+            <div class="earnings-item">
+                <h4>Per Annual Sale</h4>
+                <div class="val">$99.80</div>
+                <div class="sub">20% of $499</div>
+            </div>
+            <div class="earnings-item">
+                <h4>Per Lifetime Sale</h4>
+                <div class="val">$199.80</div>
+                <div class="sub">20% of $999</div>
+            </div>
+            <div class="earnings-item">
+                <h4>5 Sales/Month</h4>
+                <div class="val">$999</div>
+                <div class="sub">Potential monthly income</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SIGNUP FORM -->
+<section class="section section-dark">
+    <div class="section-title">Become an <span>Affiliate</span></div>
+    <div class="section-sub">Fill out the form below to join our affiliate program.</div>
+    <form id="affiliateForm" onsubmit="submitAffiliate(event)" style="max-width:500px;margin:0 auto;">
+        <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" name="name" placeholder="Your full name" required>
+        </div>
+        <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+            <label>Telegram Username</label>
+            <input type="text" name="telegram" placeholder="@yourusername" required>
+        </div>
+        <div class="form-group">
+            <label>Payout Method</label>
+            <select name="payout" required>
+                <option value="">Select payout method</option>
+                <option value="paypal">PayPal</option>
+                <option value="crypto">Crypto (USDT/BTC)</option>
+                <option value="bank">Bank Transfer</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Payout Email/Address</label>
+            <input type="text" name="payout_details" placeholder="PayPal email or wallet address" required>
+        </div>
+        <div class="form-group">
+            <label>How will you promote?</label>
+            <input type="text" name="promo" placeholder="YouTube, Instagram, Telegram, etc.">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;">Apply Now</button>
+        <p style="font-size:0.75rem;color:#555;text-align:center;margin-top:10px;">We review applications within 24 hours. You'll receive your unique code via Telegram.</p>
+    </form>
+</section>
+
+<!-- AFFILIATE DASHBOARD -->
+<section class="section">
+    <div class="dash-header">
+        <h1>Affiliate Dashboard</h1>
+        <p>Track your referrals, earnings, and commission payouts</p>
+    </div>
+
+    <!-- Login -->
+    <div class="login-box" id="loginBox">
+        <h2>Access Your Dashboard</h2>
+        <p>Enter your affiliate code to view your stats</p>
+        <div class="form-group">
+            <input type="text" id="loginCode" placeholder="Enter your affiliate code (e.g. TENDAI20)">
+        </div>
+        <button class="btn btn-primary" style="width:100%;" onclick="affiliateLogin()">View Dashboard</button>
+        <div class="login-error" id="loginError">Invalid code. Contact us on Telegram for help.</div>
+    </div>
+
+    <!-- Dashboard Content -->
+    <div class="dash-content" id="dashContent">
+        <div class="user-bar">
+            <h2>Welcome, <span id="dashName"></span></h2>
+            <button class="logout-btn" onclick="affiliateLogout()">Logout</button>
+        </div>
+
+        <div class="stat-grid">
+            <div class="stat-card">
+                <div class="label">Total Sales</div>
+                <div class="value green" id="totalSales">0</div>
+                <div class="sub">Referred customers</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Total Revenue</div>
+                <div class="value" id="totalRevenue">$0</div>
+                <div class="sub">From your referrals</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Commission Owed</div>
+                <div class="value yellow" id="commissionOwed">$0</div>
+                <div class="sub">Pending payout</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Total Paid</div>
+                <div class="value green" id="totalPaid">$0</div>
+                <div class="sub">Already paid out</div>
+            </div>
+        </div>
+
+        <div class="code-box">
+            <h3>Your Affiliate Code</h3>
+            <div class="code-display" id="dashCode"></div>
+            <br>
+            <button class="copy-btn" onclick="copyCode()">Copy Code</button>
+            <p class="code-note">Share this code with friends. They get 20% off, you earn 20% commission.</p>
+        </div>
+
+        <div class="referral-link">
+            <h3>Your Referral Link</h3>
+            <div class="link-display">
+                <input type="text" class="link-input" id="referralLink" readonly>
+                <button class="copy-btn" onclick="copyLink()">Copy Link</button>
+            </div>
+        </div>
+
+        <div class="payout-section">
+            <h3>Request Payout</h3>
+            <div class="payout-grid">
+                <input type="text" class="payout-input" id="payoutAmount" placeholder="Amount (min $50)">
+                <input type="text" class="payout-input" id="payoutAddress" placeholder="Your PayPal / wallet address">
+                <button class="payout-btn" onclick="requestPayout()">Request Payout</button>
+            </div>
+        </div>
+
+        <div class="sales-table">
+            <h3>Recent Sales</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Customer</th>
+                        <th>Plan</th>
+                        <th>Amount</th>
+                        <th>Commission</th>
+                    </tr>
+                </thead>
+                <tbody id="salesBody">
+                    <tr><td colspan="5" class="no-sales">No sales yet. Share your code to start earning!</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<div class="chat-widget">
+    <div class="chat-popup" id="chatPopup">
+        <div class="chat-header"><div class="chat-header-avatar">KSB</div><div class="chat-header-info"><h4>Kingade Scalper Bot</h4><p>We typically reply in minutes</p></div></div>
+        <div class="chat-body"><div class="chat-msg">Hello! How can we help you today?</div></div>
+        <div class="chat-options">
+            <a href="https://t.me/KingAdeFx" class="chat-option" target="_blank"><span>&#128172;</span> Chat on Telegram</a>
+            <a href="mailto:kingade.fx@gmail.com" class="chat-option"><span>&#128231;</span> Send us an Email</a>
+            <a href="pricing.html" class="chat-option" onclick="closeChat()"><span>&#128176;</span> View Pricing</a>
+        </div>
+    </div>
+    <button class="chat-btn" onclick="toggleChat()">&#128172;</button>
+</div>
+
+<footer>
+    <div class="footer-links"><a href="index.html">Home</a><a href="download.html">Download</a><a href="pricing.html">Pricing</a><a href="affiliate.html">Affiliate</a><a href="contact.html">Contact</a><a href="faq.html">FAQ</a><a href="about.html">About</a></div>
+    <div class="footer-social"><a href="https://t.me/KingAdeFx" target="_blank">Telegram</a><a href="mailto:kingade.fx@gmail.com">Email</a></div>
+    <div class="footer-copy">&copy; 2026 Kingade Scalper Bot. All rights reserved.</div>
+</footer>
+
+</body>
+<script src="js/main.js"></script>
+</html>
